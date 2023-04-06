@@ -3,25 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        * { padding: 0; margin: 0; box-sizing: border-box; }
+        li { list-style-position: inside; list-style: none; }
+        #wrap{
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        #wrap h2{
+            font-size: 50px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        #wrap h3{
+            text-align: center;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        #content{
+            display: inline-block;
+            font-size: 0;
+            width: 100%;
+            height: 100%;
+            margin-bottom: 50px;
+        }
+        #content2{
+            display: inline-block;
+            margin-right: 5%;
+        }
+        #content3 {
+            display: inline-block;
+            width: 70%;
+            font-size: 14px;
+            padding-bottom: 50px;
+        }
+        #content3 div:first-child{
+            margin-bottom: 10%;
+        }
+        div>p{
+            margin-top: 25px;
+        }
+        dl{
+            display: inline-block;
+            margin-left: 80%;
+        }
+        dd{
+            display: inline-block;
+            float: left;
+        }
+        dt{
+            display: inline-block;
+        }
+        #footer{
+            padding: 40px 0;
+            border-top: 1px solid #ddd;
+            width: 100%;
+            display: inline-block;
+        }
+        #footer ul{
+            display: inline-block;
+            margin-top: 30px;
+            width: 100%;
+        }
+        #footer li{
+            display: inline-block;
+            width: 33%;
+        }
+        .bg{
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <div id="wrap">
-        <h2 style="text-align: center;">ORGANIC</h2>
-        <h3 style="text-align: center;">
+        <h2>ORGANIC</h2>
+        <h3>
             오가닉<br>
             <span>러프한 소재와 함께 자연 속의 공간을 풍부하게 경험할 수 있는 오가닉한 스타일</span>
         </h3>
-        <div>
+        <div id="content">
             <!-- 오가닉 디자인 영역 -->
-            <div>
+            <div id="content2">
                 <img src="images/green_img.gif" alt=""/>
             </div>
             <!-- 오가닉 디자인 영역 / -->
 
             <!-- 우측 콘텐츠 영역 -->
-            <div>
+            <div id="content3">
                 <div>
                     <h4><img src="images/title03_01.gif" alt=""/></h4>
 
@@ -61,21 +132,21 @@
         </div>
 
         <!-- 스타일 뷰 영역 -->
-        <div>
+        <div id="footer">
             <h4><img src="images/title03_03.gif" alt=""/></h4>
             <ul>
                 <li>
-                    <img src="images/view_img01.gif" alt=""/>
+                    <img class="bg" src="images/view_img01.gif" alt=""/>
                     <p>Keyword 오가닉키워드 
                         <span><img src="images/detail_view.gif" alt=""/></span></p>
                 </li>
                 <li>
-                    <img src="images/view_img02.gif" alt=""/>
+                    <img class="bg" src="images/view_img02.gif" alt=""/>
                     <p>Keyword 오가닉이미지맵 
                         <span><img src="images/detail_view.gif" alt=""/></span></p>
                 </li>
                 <li>
-                    <img src="images/view_img03.gif" alt=""/>
+                    <img class="bg" src="images/view_img03.gif" alt=""/>
                     <p>Material Photo 오가닉마감재
                         <span><img src="images/detail_view.gif" alt=""/></span></p>
                 </li>
