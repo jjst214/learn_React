@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>다양한 폼 컨트롤</h1>
+    <form action="" method="get">
+        <table border="1" cellspacing="0" cellpadding="5">
+            <tr>
+                <td>이름</td>
+                <td>
+                    <input type="text" name="userName">
+                </td>
+            </tr>
+            <tr>
+                <td>아이디</td>
+                <td>
+                    <input type="text" name="userID">
+                </td>
+            </tr>
+            <tr>
+                <td>비밀번호</td>
+                <td>
+                    <input type="password" name="userPw">
+                </td>
+            </tr>
+            <tr>
+                <td>비밀번호 확인</td>
+                <td>
+                    <input type="password" name="userPwCheck">
+                </td>
+            </tr>
+            <tr>
+                <td>이메일</td>
+                <td>
+                    <input type="text" name="userEamil"> @ 
+                    <select>
+                        <option>선택</option>
+                        <option value="naver.com">naver.com</option>
+                        <option value="google.com">google.com</option>
+                        <option value="daum.com">daum.com</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>생년월일</td>
+                <td>
+                    <!-- 연 -->
+                    <select name="year">
+                        <option>년</option>
+                        <option>1991</option>
+                        <option value="1992">1992</option>
+                        <option value="1993">1993</option>
+                        <option value="1994">1994</option>
+                        <option value="1995">1995</option>
+                        <option value="1996">1996</option>
+                        <option value="1997">1997</option>
+                        <option value="1998">1998</option>
+                        <option value="1999">1999</option>
+                    </select>
+                    <!-- 월 -->
+                    <select name="month">
+                        <option>월</option>
+                        <option value="1">1월</option>
+                        <option value="2">2월</option>
+                        <option value="3">3월</option>
+                        <option value="4">4월</option>
+                        <option value="5">5월</option>
+                        <option value="6">6월</option>
+                        <option value="7">7월</option>
+                        <option value="8">8월</option>
+                        <option value="9">9월</option>
+                        <option value="10">10월</option>
+                        <option value="11">11월</option>
+                        <option value="12">12월</option>
+                    </select>
+                    <!-- 일 -->
+                    <select name="day">
+                        <option>일</option>
+                        <option value="1">1일</option>
+                        <option value="2">2일</option>
+                        <option value="3">3일</option>
+                        <option value="4">4일</option>
+                        <option value="5">5일</option>
+                        <option value="6">6일</option>
+                        <option value="7">7일</option>
+                        <option value="8">8일</option>
+                        <option value="9">9일</option>
+                        <option value="10">10일</option>
+                        <option value="11">11일</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>휴대폰번호</td>
+                <td>
+                    <select name="fowardNum">
+                        <option>선택</option>
+                        <option value="010">010</option>
+                        <option value="011">011</option>
+                        <option value="017">017</option>
+                    </select>
+                    -
+                    <input type="text" name="middleNum"/>
+                    -
+                    <input type="text" name="backNum"/>
+                    <button type="submit" value="인증번호">인증번호 발송</button>
+                    <button type="submit" value="재발송">인증번호 재발송</button>
+                </td>
+            </tr>
+            <tr>
+                <td>인증번호 입력</td>
+                <td>
+                    <input type="text" name="numCheck"/>
+                    <button type="submit" value="check">확인</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
