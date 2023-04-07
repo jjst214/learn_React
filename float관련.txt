@@ -1,0 +1,27 @@
+float  띄워주는 속성
+>>left, right
+clear  float의 흐름을 끊어줌
+>>left, right, both
+
+<position 태그를 어떻게 위치시킬지 정의 
+>>1.static 기본값
+2.absolute 절대좌표를 기준으로 위치를 지정
+3.relative 상대좌표(원래 있던 위치)를 기준으로 위치를 지정
+4.fixed 스크롤과 상관없이 좌측상단을 기준으로 위치를 지정
+  (스크롤 올리거나 내려도 고정된 메뉴)
+
+top
+left
+right
+bottom
+사용법ex) position:fixed;
+top: 25px; left 50px;
+
+*float의 특징
+높이 요소height가 사라져서 float속성을 받은 박스는 쌓이지 않고 겹치게 됨
+
+*float 때문에 박스가 겹치는 상황을 해결하는 방법
+1.float가 적용된 요소의 부모요소에게 height 설정
+2.block 요소(ex. p태그)를 추가하고 그 block 요소에게 clear 속성 설정
+3.float이 적용된 박스::after에 content:""; display:block; clear:both;속성을 부여
+4.(보통 사용하는방법) 3번 기능이 적용된 클래스를 만들어 필요한곳에 부착
