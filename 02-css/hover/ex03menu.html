@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * { padding: 0;margin: 0;box-sizing: border-box; }
+        a { text-decoration: none; color: black; }
+        li{list-style: none;}
+        div{
+            width: 1200px;
+            height: 120px;
+            margin: 10px auto;
+        }
+        h1{
+            text-align: center;
+            margin:40px 0;
+            height: 50px;
+        }
+        div>ul{
+            border-top: 3px solid black;
+            border-bottom: 1px solid #ddd;
+            height: 70px;
+        }
+        div>ul>li{
+            float: left;
+            width: 200px;
+            text-align: center;
+            line-height: 67px;
+        }
+        div>ul>li li{
+            margin-top: 10px;
+            line-height: 1.6;
+        }
+        div>ul>li>a:hover {
+            color: red;
+        }
+        li>ul{
+            display: none;
+        }
+        li>ul>li{
+            color: black;
+        }
+        div>ul>li:hover ul{
+            display: block;
+        }
+        li>ul>li>a:hover{
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>GreenMall</h1>
+        <ul>
+            <li>
+                <a href="#">제품소개</a>
+                <ul>
+                    <li><a href="#">소메뉴1</a></li>
+                    <li><a href="#">소메뉴2</a></li>
+                    <li><a href="#">소메뉴3</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">구매안내</a>
+                <ul>
+                    <li><a href="#">소메뉴1</a></li>
+                    <li><a href="#">소메뉴2</a></li>
+                    <li><a href="#">소메뉴3</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">고객센터</a>
+                <ul>
+                    <li><a href="">소메뉴1</a></li>
+                    <li><a href="">소메뉴2</a></li>
+                    <li><a href="">소메뉴3</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">서비스</a>
+                <ul>
+                    <li><a href="">소메뉴1</a></li>
+                    <li><a href="">소메뉴2</a></li>
+                    <li><a href="">소메뉴3</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">홍보센터</a>
+                <ul>
+                    <li><a href="">소메뉴1</a></li>
+                    <li><a href="">소메뉴2</a></li>
+                    <li><a href="">소메뉴3</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">기업소개</a>
+                <ul>
+                    <li><a href="">소메뉴1</a></li>
+                    <li><a href="">소메뉴2</a></li>
+                    <li><a href="">소메뉴3</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

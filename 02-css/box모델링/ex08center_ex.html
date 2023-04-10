@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;box-sizing: border-box;}
+        li{list-style: none;}
+        a{text-decoration: none; color: inherit;}
+        body{
+            font-size: 14px;
+        }
+        .clearboth{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        #wrap{
+            background-color: black;
+            width: 100%;
+        }
+        #header{
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-bottom: 10px;
+        }
+        #header ul{
+            width: 33%;
+        }
+        #header>div:nth-child(1) ul{
+            width: 400px;
+            float: left;
+            background-color: aqua;
+        }
+        #header>div:nth-child(1) li{
+            float: left;
+            padding: 10px;
+        }
+        #header>div:nth-child(3) ul{
+            float: right;
+            background-color: red;
+        }
+        #header>div:nth-child(3) li{
+            float: right;
+            color: white;
+        }
+        li i.material-icons{
+            color: white;
+        }
+        #header h1{
+            width: 33%;
+            display: inline;
+        }
+        #wrap div{
+            max-width: 100%
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header" class="clearboth">
+            <div>
+                <ul>
+                    <li><a href="#"><i class="material-icons">add_location</i></a></li>
+                    <li><a href="#"><i class="material-icons">local_grocery_store</i></a></li>
+                    <li><a href="#"><i class="material-icons">store_mall_directory</i></a></li>
+                </ul>
+            </div>
+            <h1>
+                <a href="#">
+                    <img src="images/top_logo.gif" alt="상단로고"/>
+                </a>
+            </h1>
+            <div>
+                <ul>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Join</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <img src="images/visual.gif">
+        </div>
+        <div id="content">
+            
+        </div>
+        <div id="footer">
+
+        </div>
+    </div>
+</body>
+</html>
