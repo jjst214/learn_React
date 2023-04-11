@@ -39,7 +39,7 @@
    기준- top:50%; right:50%; 지정		2)계산함수로 중앙 보내기 calc
    margin-right:-(부모요소의 width/2)px	top: calc(50% - 보낼요소의 height/2px)
    margin-top:-(부모요소의 width/2)px		right: calc(50% - 보낼요소의 width/2px)
-
+				ex):left: calc(50% - 50px);<<크기가 50,50px짜리인 div를 중앙배치
    3) translate로 위치 지정하기
      기준- top:50%; right:50%; 지정
       transform:translate(-50%,-50%)
