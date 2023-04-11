@@ -10,7 +10,7 @@
         *{margin: 0;padding: 0;box-sizing: border-box;}
         li{list-style: none;}
         a{text-decoration: none; color: inherit;}
-        .clearboth{
+        .clearboth::after{
             content: "";
             display: block;
             clear: both;
@@ -62,7 +62,7 @@
             max-width: 1100px;
             margin: 0 auto;
         }
-        #content div:first-child{
+        #category{
             padding-top: 10px;
             height: 80px;
         }
@@ -81,6 +81,7 @@
         #product{
             border-top: 3px double #ddd;
             text-align: center;
+            width: 100%;
         }
         #product h3{
             padding: 20px;
@@ -102,6 +103,34 @@
         }
         #product span{
             display: block;
+        }
+        #main_banner{
+            width: 100%;
+        }
+        #main_banner>div:nth-child(1) img{
+            width: 50%;
+            float: left;
+        }
+        #main_banner>div:nth-child(2) img{
+            width: 50%;
+            float: right;
+        }
+        #main_banner>div:nth-child(3) img{
+            width: 25%;
+            float: left;
+        }
+        #main_banner>div:nth-child(4) img{
+            width: 25%;
+            float: right;
+        }
+        #footer{
+            width: 100%;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        #footer div{
+            width: 100%;
+            background-color: #ddd;
         }
     </style>
 </head>
@@ -131,7 +160,7 @@
         </div>
     </div>
     <div id="content" class="clearboth">
-        <div>
+        <div id="category">
             <h1>
                 <img src="images/so_title.gif" alt=""/>
             </h1>
@@ -150,7 +179,7 @@
                 </li>
             </ul>
         </div>
-        <div id="product">
+        <div id="product" class="clearboth">
             <h3>
                 NEW PRODUCT
             </h3>
@@ -199,10 +228,34 @@
                 </ul>
             </div>
         </div>
+        <div id="main_banner">
+            <div>
+                <a href="#">
+                    <img src="images/main_banner01.gif" alt=""/>
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <img src="images/main_banner02.gif" alt=""/>
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <img src="images/main_banner03.gif" alt=""/>
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <img src="images/main_banner04.gif" alt=""/>
+                </a>
+            </div>
+        </div>
     </div>
     
-    <div id="footer">
-
+    <div id="footer" class="clearboth">
+        <div>
+            dd
+        </div>
     </div>
 </body>
 </html>

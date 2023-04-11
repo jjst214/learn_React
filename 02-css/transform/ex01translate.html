@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;box-sizing: border-box;}
+        .bg{
+            background-color: aliceblue;
+            width: 200px;
+            height: 200px;
+            margin: 100px;
+            position: relative;
+            display: inline-block;
+        }
+        .bg div{
+            position: relative;
+            top:50%;
+            left: 50%;
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+            top: calc(50% - 50px);
+            left: calc(50% - 50px);
+            transition: 0.5s;
+        }
+        .bg:nth-child(1) div:hover{
+            transform: translateX(50px);
+        }
+        .bg:nth-child(2) div:hover{
+            transform: scale(1.5);
+        }
+        .bg:nth-child(3) div:hover{
+            transform: rotate(45deg);
+        }
+        .bg:nth-child(4) div:hover{
+            transform: skew(-30deg, -30deg);
+        }
+        .bg:nth-child(5) div:hover{
+            transform: translate(-50px,-50px);
+        }
+        .bg:nth-child(6) div:hover{
+            transform: scale(5.0);
+        }
+        .bg:nth-child(7) div:hover{
+            
+        }
+        .bg:nth-child(8) div:hover{
+            transform: translate(20px,20px);
+        }
+        .bg:nth-child(6){
+            overflow: scroll;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg">
+        <div></div>
+    </div>
+    <div class="bg">
+        <div></div>
+    </div>
+    <div class="bg">
+        <div></div>
+    </div>
+    <div class="bg">
+        <div></div>
+    </div>
+    <div class="bg">
+        <div></div>
+    </div>
+    <div class="bg">
+        <div></div>
+    </div>
+    <div class="bg">
+        <div></div>
+    </div>
+    <div class="bg">
+        <div></div>
+    </div>
+</body>
+</html>
