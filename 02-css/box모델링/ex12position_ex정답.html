@@ -133,6 +133,66 @@
             right: 30px;
             bottom: 30px;
         }
+
+
+        /* ----------- hover3 ------------ */
+        #hover3 .blackbg{
+            opacity: 0;
+        }
+        #hover3 .text{
+            position: absolute;
+            top: 50%;
+        }
+        #hover3 .text h3{
+            transform: translateY(-40px);
+            transition: 0.5s;
+        }
+        #hover3 .text p{
+            transform: translateY(40px);
+            transition: 0.5s;
+            opacity: 1;
+        }
+        #hover3 li:hover .blackbg{
+            opacity: 1;
+            transition: 0.5s;
+        }
+        #hover3 li:hover h3{
+            transform: translateY(-20px);
+        }
+        #hover3 li:hover p{
+            transform: translateY(20px);
+        }
+        #hover3 li::before{
+            content: "";
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            right: 20px;
+            bottom: 0px;
+            border-top: 1px solid#fff;
+            z-index: 1;
+            transition: 0.5s;
+        }
+        #hover3 li::after{
+            content: "";
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            right: 20px;
+            bottom: 0px;
+            border-top: 1px solid#fff;
+            transition: 0.5s;
+        }
+        #hover3 li:hover::before{
+            bottom: 50%;
+            transform: rotate(45deg);
+        }
+        #hover3 li:hover::after{
+            bottom: 50%;
+            transform: rotate(-45deg);
+        }
     </style>
 </head>
 <body>
@@ -170,6 +230,27 @@
             </li>
             <li>
                 <img src="../hover/images/4.jpg" alt="">
+                <div class="blackbg"></div>
+                <div class="text">
+                    <h3>hover effect</h3>
+                    <p>green web</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div id="hover3">
+        <h2>hover3</h2>
+        <ul class="clearboth">
+            <li>
+                <img src="../hover/images/1.jpg" alt="">
+                <div class="blackbg"></div>
+                <div class="text">
+                    <h3>hover effect</h3>
+                    <p>green web</p>
+                </div>
+            </li>
+            <li>
+                <img src="../hover/images/2.jpg" alt="">
                 <div class="blackbg"></div>
                 <div class="text">
                     <h3>hover effect</h3>
