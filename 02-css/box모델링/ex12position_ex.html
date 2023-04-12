@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;box-sizing: border-box;}
+        li{
+            list-style: none;
+        }
+        p{
+            font-weight: normal;
+            opacity: 0;
+            transition: 0.5s;
+        }
+        .clearboth::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        body{
+            background-color: dimgrey;
+            color: #fff;
+        }
+        #effect1{
+            width: 100%;
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+        #effect1 ul{
+            width: 100%;
+            margin-top: 30px;
+        }
+        #effect1 li{
+            position: relative;
+            width: 100%;
+            height: 360px;
+            color: white;
+            text-align: center;
+        }
+        #effect1 li h2{
+            width: 100%;
+            position: absolute;
+            top: calc(50% - 100px);
+            transition: 0.5s;
+        }
+        #effect1 ul>li:first-child{
+            background-image: url("../hover/images/1.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 48%;
+            float: left;
+        }
+        #effect1 ul>li::before{
+            content: "";
+            display: block;
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            right: 30px;
+            bottom: 30px;
+            border-left: 1px solid #fff;
+            border-right: 1px solid #fff;
+            transform: scale(1,0);
+            transition: 0.5s;
+        }
+        #effect1 ul>li:hover h2{
+            transform: translate(0px,50px);
+        }
+        #effect1 ul>li:hover p{
+            opacity: 1;
+        }
+        #effect1 ul>li:hover::before{
+            transform: scale(1,1);
+        }
+        #effect1 ul>li::after{
+            content: "";
+            display: block;
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            right: 30px;
+            bottom: 30px;
+            border-top: 1px solid #fff;
+            border-bottom: 1px solid #fff;
+            transform: scale(0,1);
+            transition: 0.5s;
+        }
+        #effect1 ul>li:hover::after{
+            transform: scale(1,1);
+        }
+        #effect1 ul>li:last-child{
+            background-image: url("../hover/images/2.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 48%;
+            float: right;
+        }
+
+
+        #effect2{
+            width: 100%;
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+        #effect2 div{
+            overflow: hidden;
+        }
+        #effect2 ul{
+            width: 100%;
+            margin-top: 30px;
+        }
+        #effect2 li{
+            position: relative;
+            width: 100%;
+            height: 360px;
+            color: white;
+            text-align: center;
+            transition: 0.5s;
+        }
+        #effect2 li h2{
+            width: 100%;
+            position: absolute;
+            top: calc(50% - 50px);
+            transition: 0.5s;
+        }
+        #effect2 ul>li:first-child{
+            background-image: url("../hover/images/3.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            transform: scale(1.2);
+            width: 48%;
+            float: left;
+        }
+        #effect2 ul>li::before{
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            border-left: 1px solid #fff;
+            border-right: 1px solid #fff;
+            transform: scale(1,0);
+            transition: 0.5s;
+        }
+        #effect2 ul li:hover{
+            transform: scale(1);
+        }
+        #effect2 ul>li:hover::before{
+            transform: scale(1,1);
+        }
+        #effect2 ul>li::after{
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            border-top: 1px solid #fff;
+            border-bottom: 1px solid #fff;
+            transform: scale(0,1);
+            transition: 0.5s;
+        }
+        #effect2 ul>li:hover::after{
+            transform: scale(1,1);
+        }
+        #effect2 ul>li:last-child{
+            background-image: url("../hover/images/4.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            transform: scale(1.2);
+            width: 48%;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div id="effect1">
+        <h2>hover01</h2>
+        <ul class="clearboth">
+            <li>
+                <h2>
+                    hover effect
+                    <p>green web</p>
+                </h2>
+                
+            </li>
+            <li>
+                <h2>
+                    hover effect
+                    <p>green web</p>
+                </h2>
+            </li>
+        </ul>
+    </div>
+    <div id="effect2">
+        <h2>hover02</h2>
+        <div>
+            <ul class="clearboth">
+                <li>
+                    <h2>
+                        hover effect
+                    </h2>
+                </li>
+                <li>
+                    <h2>
+                        hover effect
+                    </h2>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
