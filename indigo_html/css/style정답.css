@@ -1,0 +1,166 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+a{text-decoration: none; color: inherit;}
+address{font-style: normal;}
+li{list-style: none;}
+img{vertical-align: top; width: 100%;}
+h1,h2,h3,h4,h5,h6{font-weight: normal;}
+table{
+    border-collapse: collapse;
+}
+
+body{
+    font-size: 14px;
+    line-height: 1.6;
+    color: #222;
+}
+.clearboth::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.inner_container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header{
+    padding: 20px;
+}
+header h1{
+    float: left;
+    font-size: 34px;
+}
+header ul{
+    float: right;
+}
+header ul li{
+    float: left;
+    padding: 20px;
+    font-size: 18px;
+}
+
+main > section:not(:first-child){
+    padding: 60px 0;
+}
+.tit{
+    padding-bottom: 60px;
+}
+.tit h2{
+    color: #3f51b5;
+    font-size: 34px;
+    font-weight: bold;
+}
+#weare .tit h2{
+    float: left;
+    width: 32%;
+    border-right: 8px solid #ddd;
+}
+
+#weare .tit p{
+    float: left;
+    width: 65%;
+    padding-left: 40px;
+}
+#weare li{
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding: 30px 50px;
+}
+#weare li img{
+    height: 100px;
+    /* 전역 img width를 100%줘놔서 height 100만 설정하면 이미지가 늘어나서 width auto 줌 */
+    width: auto;
+}
+#weare li h3{
+    color: #3f51b5;
+    padding:20px 0;
+}
+
+#work li{
+    position: relative;
+    float: left;
+    width: 25%;
+    overflow: hidden;
+}
+#work li .bluebg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(63,51,181,0);
+    transition: 0.5s;
+}
+#work li .bluebg div{
+    position: absolute;
+    top: -200px;
+    left: 50px;
+    color: #fff;
+    transition: 0.5s;
+}
+#work li:hover .bluebg{
+    background-color: rgba(63, 51, 181, 0.3);
+}
+#work li:hover .bluebg div{
+    top:50px;
+}
+#blog .tit{
+    float: left;
+    width: 30%;
+}
+#blog ul{
+    float: left;
+    width: 70%;
+}
+#blog ul li{
+    float: left;
+    width: 32.3333%;
+}
+#blog ul li:not(:last-child){
+    margin-right: 1.5%;
+}
+
+#contact .tit{
+    float: left;
+    width: 30%;
+}
+#contact table{
+    float: left;
+    width: 70%;
+}
+#contact table td{
+    width: 50%;
+}
+#contact input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    line-height: 40px;
+}
+#contact textarea{
+    width: 100%;
+    border: none;
+    height: 150px;
+    border-bottom: 1px solid #ddd;
+}
+/* submit 버튼 선택자 */
+#contact tr:last-child td{
+    text-align: right;
+}
+#contact tr:last-child input{
+    width: 200px;
+    color: #fff;
+    background-color: #3f51b5;
+    text-align: center;
+    line-height: 40px;
+}
+#pl{
+    padding-left: 10px;
+}
+
+footer{
+    text-align: center;
+    padding: 40px 0;
+}

@@ -11,6 +11,10 @@ li{ list-style: none; }
 4.<address> 글꼴 스타일을 노말로 변경
 address{ font-style: normal; }
 
+5.컨텐츠 박스 크기 잡을때 width:100% 주고 max-width:1200px 등으로 다시 잡는이유
+=> width:1200px 로 주면 해상도가 작은 화면으로 보면 가로 스크롤이 생기기 때문에
+깔끔한 반응형 웹사이트를 만들기 위해 width100%를 먼저 준 다음 max-width로 크기를 잡음
+
 스타일 속성
 width 너비(가로)
 max-width 최대 너비
@@ -26,3 +30,12 @@ border-radius 테두리 모서리 라운딩
 
 테이블
 border-collapse: collapse;
+
+
+
+*{margin: 0;padding: 0;box-sizing: border-box;}
+a{text-decoration: none; color: inherit;}
+address{font-style: normal;}
+li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-weight: normal;}
