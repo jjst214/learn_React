@@ -11,7 +11,7 @@
     <div>
         <header class="clearboth">
             <h1>INDIGO</h1>
-            <nav>
+            <nav class="clearboth">
                 <ul class="clearboth">
                     <li><a href="#">HOME</a></li>
                     <li><a href="#">WEARE</a></li>
@@ -19,6 +19,13 @@
                     <li><a href="#">BLOG</a></li>
                     <li><a href="#">CONTACT US</a></li>
                 </ul>
+            </nav>
+            <nav>
+                <div id="mobile_nav">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </nav>
         </header>
         <main>
@@ -158,26 +165,19 @@
                 <div class="tit">
                     <h2>CONTACT</h2>
                 </div>
-                <table>
-                    <tr>
-                        <td><input type="text" placeholder="name" name="user_name"></td>
-                        <td rowspan="3" id="pl">
-                            <textarea name="user_message" id="" cols="30" rows="10"></textarea>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><input type="text" placeholder="Phone" name="user_phone"></td>
-                       
-                    </tr>
-                    <tr>
-                        <td><input type="text" placeholder="Email Address" name="user_email"></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            <input type="submit" value="send me">
-                        </td>
-                    </tr>
-                </table>
+                <div id="message">
+                    <div id="inputs">
+                        <input type="text" placeholder="name" name="user_name">
+                        <input type="text" placeholder="Phone" name="user_phone">
+                        <input type="text" placeholder="Email Address" name="user_email">
+                    </div>
+                    <div id="textMessage">
+                        <textarea name="user_message" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div id="button">
+                        <input type="submit" value="send me">
+                    </div>
+                </div>
             </section>
         </main>
         <footer>

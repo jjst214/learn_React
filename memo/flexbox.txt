@@ -1,0 +1,40 @@
+flexbox layout
+
+1.컨테이너(부모요소)
+부모요소에 display:flex; 지정하면 자식요소들의 배치 방식을 바꿀 수 있음
+(float 사용 후 부모요소에 clearboth 달던 곳)
+
+1)flex 컨테이너를 지정
+display:flex;
+
+2)아이템들의 배치방향 지시 
+(속성)flex-direction : (속성값)row, row-reverse, column, column-reverse 중 한개 부여
+	       		가로  역방향가로   세로        역방향세로
+
+3)아이템의 줄바꿈 설정(디폴트 값이 nowrap이기 때문에 아이템이 최대 width를 넘어가면 크기가 줄어듦)
+(속성)flex-wrap : (속성값)wrap, nowrap,    wrap-reverse  중 한개 부여
+	          줄바꿈가능, 줄바꿈불가, 역방향줄바꿈
+
+
+***2,3번 한번에 작성가능 속기법 flex-flow
+flex-flow : row wrap;
+
+4)주축 방향 정렬(디폴트값 flex-start)
+(속성)justify-content : (속성값)flex-start,     flex-end,    center,      space-between
+                        (축방향따라)순차정렬,  우측정렬, 가운데정렬  부모요소의 양끝으로 정렬
+		    space-around, space-evenly
+		    
+
+5)교차축 방향 정렬(디폴트값 stretch)
+* 주축방향으로 한줄일때 정렬
+align-items : flex-start, flex-end, center, stretch
+
+* 주축방향으로 여러줄일때 정렬
+align-content : flex-start, flex-end, center, space-between, space-around, space-evenly
+
+
+2.아이템(자식요소)
+
+order 아이템 배치순서 (디폴트값 0)
+작은 숫자가 먼저배치
+

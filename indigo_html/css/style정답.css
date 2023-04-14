@@ -6,8 +6,8 @@ img{vertical-align: top; width: 100%;}
 h1,h2,h3,h4,h5,h6{font-weight: normal;}
 table{
     border-collapse: collapse;
+    outline: none;
 }
-
 body{
     font-size: 14px;
     line-height: 1.6;
@@ -39,7 +39,23 @@ header ul li{
     padding: 20px;
     font-size: 18px;
 }
-
+/* 모바일 화면 메뉴 ui */
+#mobile_nav{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    display: none;
+}
+#mobile_nav span{
+    display: block;
+    width: 60%;
+    height: 4px;
+    margin: 6px auto;
+    background-color: #3f51b5;
+}
+/* 모바일 화면 메뉴 ui end */
 main > section:not(:first-child){
     padding: 60px 0;
 }
@@ -126,18 +142,25 @@ main > section:not(:first-child){
     float: left;
     width: 30%;
 }
-#contact table{
+#contact #message{
     float: left;
     width: 70%;
 }
-#contact table td{
-    width: 50%;
-}
 #contact input{
     width: 100%;
-    border: none;
-    border-bottom: 1px solid #ddd;
-    line-height: 40px;
+    line-height:49px;
+    border:none;
+    outline: none;
+    border-bottom: 1px solid #ccc;
+}
+#contact #inputs{
+    float: left;
+    width: 50%;
+}
+#contact #textMessage{
+    float: left;
+    width: 50%;
+    padding-left: 10px;
 }
 #contact textarea{
     width: 100%;
@@ -145,22 +168,94 @@ main > section:not(:first-child){
     height: 150px;
     border-bottom: 1px solid #ddd;
 }
-/* submit 버튼 선택자 */
-#contact tr:last-child td{
+#contact #button{
     text-align: right;
+    clear: left;
 }
-#contact tr:last-child input{
-    width: 200px;
+#contact #button input{
+    width: 100px;
     color: #fff;
     background-color: #3f51b5;
     text-align: center;
     line-height: 40px;
 }
-#pl{
-    padding-left: 10px;
-}
 
 footer{
     text-align: center;
     padding: 40px 0;
+}
+
+/* 반응형 웹 설정 */
+@media screen and (max-width:1024px) {
+    .tit{
+        text-align: center;
+    }
+    #weare .tit h2{
+        width: 100%;
+        border-right: none;
+    }
+    #weare .tit p{
+        width: 100%;
+        padding: 0;
+    }
+    #weare li{
+        width: 50%;
+    }
+    #weare li img{
+        height: 50px;
+    }
+    #work li{
+        width: 50%;
+    }
+    #blog .tit{
+        width: 100%;
+    }
+    #blog ul{
+        width: 100%;
+    }
+    #contact .tit{
+        width: 100%;
+    }
+    #contact #message{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px) {
+    header ul{
+        display: none;
+    }
+    header #mobile_nav{
+        display: block;
+    }
+    #weare li{
+        width: 100%;
+    }
+    #work li{
+        width: 100%;
+    }
+    #blog ul li{
+        width: 100%;
+    }
+    #blog ul li:not(:last-child){
+        margin-right: 0;
+    }
+    #contact #message{
+        position: relative;
+    }
+    #contact #inputs{
+        width: 100%;
+        padding: 20px;
+    }
+    #contact #textMessage{
+        width: 50%;
+        padding: 20px;
+    }
+    #contact #button{
+        display: inline-block;
+        width: 50%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 20px;
+    }
 }
