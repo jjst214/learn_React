@@ -4,7 +4,7 @@ div{
 	box-shadow: 5px 5px 5px black;
 }
 
-애니메이션 사용법:@keyframes 키프레임{ from{} to{} }
+애니메이션 사용법:style 내에서 @keyframes 키프레임{ from{} to{} } from to 대신 숫자%로도 줄 수 있음
 @keyframes moveDiv {
 	from{
 		left:0;
@@ -19,7 +19,8 @@ div{
 	animation: moveDiv 1s;
 }
 
+움직이고싶은 div박스에 주는 속성
 animation-name: 키 프레임명 지정
 animation-duration: 동작시간 지정
 animation-iteration-count: 반복횟수 지정(무한반복은 infinite)
-animation-delay: 지연시간
+animation-delay: 지연시간 
