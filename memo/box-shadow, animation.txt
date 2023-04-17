@@ -1,0 +1,25 @@
+box-shadow 폼 그림자 효과
+box-shadow : x-offset y-offset blur color
+div{
+	box-shadow: 5px 5px 5px black;
+}
+
+애니메이션 사용법:@keyframes 키프레임{ from{} to{} }
+@keyframes moveDiv {
+	from{
+		left:0;
+	}
+	to{
+		left:500px
+	}
+}
+div{
+	width:200px; height:200px; background:red;
+	position: absolute; left:0; top:0;
+	animation: moveDiv 1s;
+}
+
+animation-name: 키 프레임명 지정
+animation-duration: 동작시간 지정
+animation-iteration-count: 반복횟수 지정(무한반복은 infinite)
+animation-delay: 지연시간

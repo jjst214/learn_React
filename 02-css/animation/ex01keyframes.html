@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes moveLeft{
+            /* from{
+                left: 0;
+            }
+            to{
+                left: 500px;
+            } */
+            0%{
+                top: 0;
+                left: 0;
+                width: 100px;
+                height: 100px;
+                background-color: tomato;
+            }
+            12.5%{
+                top: 0;
+                left: 0;
+                width: 300px;
+                height: 100px;
+                background-color: lightblue;
+            }
+            25%{
+                top:0;
+                left: 200px;
+                width: 100px;
+                height: 100px;
+                background-color: lightblue;
+            }
+            37.5%{
+                top: 0;
+                left: 200px;
+                height: 300px;
+                width: 100px;
+                background-color: lightblue;
+            }
+            50%{
+                top: 200px;
+                left: 200px;
+                height: 100px;
+                width: 100px;
+                background-color: lightblue;
+            }
+            62.5%{
+                top: 200px;
+                left: 0px;
+                width: 300px;
+                height: 100px;
+                background-color: aliceblue;
+            }
+            75%{
+                top: 200px;
+                left: 0;
+                width: 100px;
+                height: 100px;
+                background-color: aliceblue;
+            }
+            87.5%{
+                top: 0;
+                left: 0;
+                width: 100px;
+                height: 300px;
+                background-color: aliceblue;
+            }
+            100%{
+                top: 0;
+                left: 0;
+                width: 100px;
+                height: 100px;
+                background-color: tomato;
+            }
+        }
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+            position: absolute;
+            left: 0;
+            top: 0;
+            animation-name: moveLeft;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
