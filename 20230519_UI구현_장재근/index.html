@@ -5,93 +5,294 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>2023-05-23 울산관광 UI디자인_장재근</title>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 <body>
     <div id="wrap">
         <header>
+            <div id="inner_menu"></div>
             <div id="nav">
-                <ul id="left_menu">
-                    <a href="#"><li>여행지</li></a>
-                    <a href="#"><li>여행정보</li></a>
+                <ul>
+                    <a href="#">
+                        <li>
+                            <p>여행지</p>
+                            <ul class="active">
+                                <a href="#"><div class="blackbg"></div><li>자연</li></a>
+                                <a href="#"><div class="blackbg"></div><li>레저</li></a>
+                                <a href="#"><div class="blackbg"></div><li>체험</li></a>
+                                <a href="#"><div class="blackbg"></div><li>먹거리</li></a>
+                                <a href="#"><div class="blackbg"></div><li>문화/유적</li></a>
+                            </ul>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <p>여행정보</p>
+                            <ul class="active">
+                                <a href="#"><div class="blackbg"></div><li>가이드북&지도</li></a>
+                                <a href="#"><div class="blackbg"></div><li>안내서비스</li></a>
+                                <a href="#"><div class="blackbg"></div><li>응급의료서비스</li></a>
+                                <a href="#"><div class="blackbg"></div><li>울산시티투어</li></a>
+                            </ul>
+                        </li>
+                    </a>
                 </ul>
                 <div id="logo">
                     <a href="#"><h1>울산관광</h1></a>
                 </div>
-                <ul id="right_menu">
-                    <a href="#"><li>지역소개</li></a>
-                    <a href="#"><li>추천</li></a>
+                <ul>
+                    <a href="#">
+                        <li>
+                            <p>축제/행사</p>
+                            <ul class="active">
+                                <a href="#"><div class="blackbg"></div><li>축제안내</li></a>
+                                <a href="#"><div class="blackbg"></div><li>공연안내</li></a>
+                                <a href="#"><div class="blackbg"></div><li>전시안내</li></a>
+                            </ul>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <p>추천여행</p>
+                            <ul class="active">
+                                <a href="#"><div class="blackbg"></div><li>월별추천</li></a>
+                                <a href="#"><div class="blackbg"></div><li>네티즌 추천</li></a>
+                                <a href="#"><div class="blackbg"></div><li>울산12경</li></a>
+                                <a href="#"><div class="blackbg"></div><li>영남알프스</li></a>
+                                <a href="#"><div class="blackbg"></div><li>추천여행코스</li></a>
+                            </ul>
+                        </li>
+                    </a>
                 </ul>
             </div>
         </header>
         <section>
             <div id="visual">
-                <img src="images/main_img01.jpg" alt="">
+                <div>
+                    <img src="images/main_img.jpg" alt="">
+                    <div class="visual_txt">
+                        <strong>ULSAN</strong>
+                        <strong>TOUR</strong>
+                        <span>
+                            울산으로 <strong>여행</strong>가요!<br>
+                            대한민국의 최대 경제 중심지, 울산
+                        </span>
+                    </div>
+                </div>
             </div>
             
             <div id="travel">
                 <div class="inner">
-                    <h2>여행지</h2>
-                    <p>편리하게 정리된 분류별 추천 여행지의 콘텐츠를 제공합니다.</p>
+                    <h2>울산의 여행 명소</h2>
+                    <p>울산의<span>'HOT'</span> 한 관광지!!</p>
                     <ul>
-                        <li>자연</li>
-                        <li>레져</li>
-                        <li>체험</li>
-                        <li>문화/유적</li>
-                        <li>먹거리</li>
-                        <li>숙박</li>
-                        <li>쇼핑</li>
+                        <a href="#">
+                            <div>
+                                <li></li>
+                                <p>
+                                    태화강 국가정원<br>
+                                    <span>봄꽃이 만발하는 아름다운 국가정원</span>
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div>
+                                <li></li>
+                                <p>
+                                    대왕암<br>
+                                    <span>시원한 바닷바람과 경치를 즐길 수 있는 곳!</span>
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div>
+                                <li></li>
+                                <p>
+                                    간절곶<br>
+                                    <span>예쁜 건물들과 해맞이 명소 스팟!</span>
+                                </p>
+                            </div>
+                        </a>
                     </ul>
                 </div>
             </div>
-            <div id="info" class="inner">
-                <h2>여행정보</h2>
-                <p>여행정보를 제공합니다.</p>
-                <ul>
-                    <li>
-                        <div>관광택시서비스 신청<span>-></span></div>
-                    </li>
-                    <li>
-                        <div>관광안내도<span>-></span></div>
-                    </li>
-                    <li>
-                        <div>관광가이드북 및 책자신청<span>-></span></div>
-                    </li>
-                    <li>
-                        <div>관광안내서비스<span>-></span></div>
-                    </li>
-                    <li>
-                        <div>응급의료서비스<span>-></span></div>
-                    </li>
-                    <li>
-                        <div>문화관광해설사<span>-></span></div>
-                    </li>
-                </ul>
+            <div id="festival">
+                <div id="wrap" class="inner">
+                    <div id="fes_txt">
+                        <h2>구경하고, 즐기고, 먹고!<br> 끝없는 <span>축제</span> 의 열기</h2>
+                        <a href="#"><strong>+</strong></a>
+                        <img src="images/traveler.jpg" alt="">
+                    </div>
+                    <div id="fes_content">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        축제사진1
+                                    </div>
+                                    <h3>119 안전 문화 축제</h3>
+                                    <p>안전교육과 재미를 동시에 느낄 수 있는 즐거운 축제</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        축제사진2
+                                    </div>
+                                    <h3>2023 울산 공업 축제</h3>
+                                    <p>울산의 정체성을 나타내는 공업축제!</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        축제사진3
+                                    </div>
+                                    <h3>울산대공원 장미축제</h3>
+                                    <p>울산대공원 장미원에서 펼쳐지는 장미축제</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div id="recommend" class="inner">
-                <div id="notice_title">
-                    <h2>알림</h2>
+            <div id="etc" class="inner">
+                <div id="travel_guide">
                     <ul>
-                        <li>공지사항</li>
-                        <li>축제일정</li>
-                        <li>행사일정</li>
+                        <li>
+                            <a href="#">
+                                <span class="txt_guide">></span>관광안내서비스
+                                <img src="images/guide_book_ico.png" alt="관광안내서비스">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="txt_guide">></span>관광가이드북 및 책자신청
+                                <img src="images/guide_mail_ico.png" alt="관광안내서비스">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="txt_guide">></span>관광안내도
+                                <img src="images/guide_map_ico.png" alt="관광안내서비스">
+                            </a>
+                        </li>
                     </ul>
                 </div>
-                <div id="notice">
-                    <div id="공지"></div>
-                    <div id="축제"></div>
-                    <div id="행사"></div>
+                <div id="show_guide">
+                    <div>
+                        <h2><span class="txt_guide">></span>공연&전시 안내</h2>
+                        <a href=""><span>더보기 +</span></a>
+                    </div>
+                    <div>
+                        <ul id="show_list">
+                            <li><a href="#">KBS국악관현악단 감사음악회 울산공연<span>2023-06-02</span></a></li>
+                            <li><a href="#">실경뮤지컬 「울산 임진왜란」<span>2023-04-29~2023-05-27</span></a></li>
+                            <li><a href="#">잠자는 숲속의 미녀<span>2023-05-26</span></a></li>
+                            <li><a href="#">올해의 작가 20년전<span>2023-05-09~2023-05-25</span></a></li>
+                            <li><a href="#">남구 구립교향악단 상반기 정기연주회<span>2023-05-23</span></a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="community">
+                <div id="com_title">
+                    <img src="images/traveler2.jpg" alt="">
+                    <h2>나의 울산 여행기</h2>
+                    <p>여러분들의 <span>이야기</span> 를 들려주세요!!</p>
+                </div>
+                <div class="inner">
+                    <div id="up_con">
+                        <div>
+                            <h2>나만의 여행일정</h2>
+                            <span>나의 특별한 여행경험을 공유하거나 볼 수 있습니다.</span>
+                            <div>
+                                <a href="#">바로가기</a>
+                            </div>
+                        </div>
+                        <div>
+                            <h2>내주변</h2>
+                            <span>나의 현 위치 기반, 다양한 울산의 여행지 정보를 제공합니다.</span>
+                            <div>
+                                <a href="#">바로가기</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="under_con">
+                        <div>
+                            <h2>여행영상</h2>
+                            <span>울산의 다양한 여행지의 영상들을 제공합니다.</span>
+                            <div>
+                                <a href="#">바로가기</a>
+                            </div>
+                        </div>
+                        <div>
+                            <h2>여행사진</h2>
+                            <span>울산의 풍경을 사진으로 감상하고 다운로드 할 수 있습니다.</span>
+                            <div>
+                                <a href="#">바로가기</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         <footer class="inner">
-            <address>
-                울산시 남구 삼산동 1234번지 12
-            </address>
-            <h1>울산관광</h1>
+            <div>
+                <div>
+                    <ul>
+                        <a href="#"><li>울산시 여행 및 홍보</li></a>
+                        <a href="#"><li>구·군 관광누리집</li></a>
+                        <a href="#"><li>울산시 문화관광누리집</li></a>
+                        <a href="#"><li>관광분야 누리집</li></a>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="">페이스북</a></li>
+                        <li><a href="">인스타</a></li>
+                        <li><a href="">유튜브</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <img src="images/btm_logo.png" alt="">
+                <address>
+                    울산시 남구 삼산동 1234번지 12
+                </address>
+                <h1>울산관광</h1>
+            </div>
+            
         </footer>
     </div>
     <div></div>
     <div></div>
+    <script>
+        //navbar inner 메뉴 효과
+        $('#nav ul>li').mouseenter(function(){
+            $('#nav li>ul').fadeIn(100);
+            $('#inner_menu').slideDown(100);
+        });
+        $('#inner_menu').mouseleave(function(){
+            $('#nav li>ul').fadeOut(100);
+            $('#inner_menu').slideUp(100);
+        });
+
+        //최상단에서 하단으로 스크롤 감지(배너 ui 변경)
+        document.addEventListener('scroll', function() {
+            let currentScrollValue = document.documentElement.scrollTop;
+            if(currentScrollValue>1){
+                $("#nav").addClass("on");
+                $("#logo a h1").addClass("on_logo");
+                $("#nav ul li p").addClass("on");
+            }else{
+                $("#nav").removeClass("on");
+                $("#logo a h1").removeClass("on_logo");
+                $("#nav ul li p").removeClass("on");
+            }
+        });
+    </script>
 </body>
 </html>
