@@ -9,6 +9,7 @@ import { composeWithDevTools } from '@redux-devtools/extension';
 import { Provider } from 'react-redux';
 import myLogger from './middlewares/myLogger';
 import ReduxThunk from "redux-thunk";
+import { BrowserRouter } from 'react-router-dom';
 //DevTools 적용 composeWithDevTools(미들웨어 적용 코드)
 //미들웨어 적용 applyMiddleware(미들웨어1, 미들웨어2)
 const store = createStore(rootReducer,
@@ -16,9 +17,11 @@ const store = createStore(rootReducer,
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <BrowserRouter>
     <Provider store={store}>
     <App />
     </Provider>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
