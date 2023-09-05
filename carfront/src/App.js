@@ -1,9 +1,9 @@
 import './App.css';
-import { AppBar, Toolbar, Typography } from '@mui/material';
-import CarList from './components/CarList';
-import AddCar from './components/AddCar';
 import { useEffect, useState } from 'react';
-import Login from './components/Login';
+import CarFront from './components/CarFront';
+import { Route, Routes } from 'react-router-dom';
+import Tour from './components/Tour';
+import Weather from './components/Weather';
 function App() {
   const [isAuthenticated, setAuth] = useState(false);
   const loginAuth = () => {
@@ -22,14 +22,12 @@ function App() {
   })
   return (
     <div className="App">
-      <AppBar position="static">
-        <Toolbar>
-          <Typography>
-            CarShop {isAuthenticated ? <span onClick={logoutAuth}>Logout</span> : ""}
-          </Typography>
-        </Toolbar>
-      </AppBar>
-      {isAuthenticated ? <CarList/> : <Login loginAuth={loginAuth}/> }
+      <Routes>
+        <Route path="/" element={<CarFront loginAuth={loginAuth} logoutAuth={logoutAuth} isAuthenticated={isAuthenticated}/>} />
+        <Route path="/tour" element={<Tour/>}/>
+        <Route path='/weather' element={<Weather/>}/>
+      </Routes>
+      
     </div>
   );
 }
