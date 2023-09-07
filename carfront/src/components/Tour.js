@@ -8,6 +8,7 @@ function Tour(props) {
     });
     const [tours, setTours] = useState([]);
     const onChange = (e) => {
+        console.log(e.target.value);
         setCdate({
             ...tourdate,
             [e.target.name] : e.target.value
